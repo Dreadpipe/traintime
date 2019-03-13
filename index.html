@@ -11,15 +11,14 @@
 </head>
 <body>
     <!--Banner with title/site description - Elon Musk's Mars Expedition?  Have fun with it-->
-    <!--DIV goes here to support spans of appended jQuery items-->
     <!--Train name, departure time, intervals, etc-->
     <div class="container">
 
     <!-- Jumbotron, I hate myself and Jumbotron-->
     <!-- Add more CSS; styling is boring-->
     <div class="jumbotron">
-        <h1 class="text-center">Train Bullshit</h1>
-        <h3 class="text-center">Some schedule for some dumbass trains</h3>
+        <h1 class="text-center">ELON MUSK'S MISSILE DEFENSE SYSTEM</h1>
+        <h3 class="text-center">An ICBM tracker for the practical CEO</h3>
     </div>
 
     <div class="row">
@@ -38,10 +37,13 @@
                             <th scope="col">Frequency (min)</th>
                             <th scope="col">Next Arrival</th>
                             <!--Minutes away will self-calculate through moment.js-->
+                            <!--Ideally counts down!  Currently does not-->
                             <th scope="col">Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <!--New items will append here-->
+                    <!--Add several "default" trains that come pre-loaded-->
+                    <tbody class="tableRow">
                     </tbody>
                 </table>
                 </div>
@@ -64,15 +66,15 @@
                 </div>
                 <div class="form-group">
                     <label for="destination-input">Destination</label>
-                    <input class="form-control" id="role-input" placeholder="Mars" type="text">
+                    <input class="form-control" id="destination-input" placeholder="Mars" type="text">
                 </div>
                 <div class="form-group">
                     <label for="frequency-input">Frequency (min)</label>
                     <input class="form-control" id="frequency-input" placeholder="300" type="text">
                 </div>
                 <div class="form-group">
-                    <label for="arrival-input">Next Arrival</label>
-                    <input class="form-control" id="arrival-input" placeholder="5:50pm" type="text">
+                    <label for="departure-input">First Departure</label>
+                    <input class="form-control" id="departure-input" placeholder="5:50pm" type="text">
                 </div>
                 <button class="btn btn-primary float-right" id="add-train-btn">Submit</button>
                 </form>
